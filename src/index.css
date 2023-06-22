@@ -10,14 +10,15 @@ body {
   padding:0;
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
-  background-color: var(--color-background);
+  /* background-color: var(--color-background); */
 }
-.app{
+/* .app{
   display: flex;
   justify-content: center;
-}
+} */
 .max-width{
   max-width: 1440px;
+  margin: 0 auto;
 }
 #banner{
   height: auto;
@@ -34,28 +35,33 @@ body {
 }
 
 .layer{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content:center ;
+  /* height: 100%; */
+  /* width: 100%; */
+  /* display: flex; */
+  /* justify-content:center ; */
   /* align-items: center; */
   
   background: linear-gradient(0deg, var(--color-background) 0%, rgba(138,36,232,0) 90%);
 }
-
-.banner-left, .banner-right{
+.roww{
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.banner-right{
 }
 .banner-left{
+  display: flex;
   color: #ffffff;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   text-align: start;
   gap: 1rem;
 }
 .banner-right{
-  justify-content: end;
+  display: flex;
+  justify-content: flex-end;
   position: relative;
 }
 .banner-left > h1{
@@ -126,15 +132,16 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: var(--color-background);
 }
 
 .title{
-  color: var(--color-purple);
+  color: #994ce2;
   font-weight: 500;
-  font-size: large;
+  font-size: medium;
 }
 
-#intro h1{
+.sub-title{
   font-weight: 800;
   font-size: 2rem;
   color: #ffffff;
@@ -195,6 +202,21 @@ body {
   border-top: 1.5px solid #f0932b;
 }
 
+#tech-stack{
+  background-image: url('./Images/techStack.png');
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 /* ===[ Media Qurry ]=== */
 
 /* Extra small devices (phones, 600px and down) */
@@ -208,6 +230,9 @@ body {
   /* ===[ Banner-End ]=== */
 .para{
   width: 100%;
+}
+#tech-stack{
+  border-top: 0.1px solid #1c2035;
 }
   
 }
@@ -261,6 +286,11 @@ body {
   .console{
     width: 110%;
     margin-left: 2rem ;
+  }
+  #tech-stack{
+    border-top: 1px solid rgba(255, 255, 255, 0.048);
+    
+  
   }
   
 }
