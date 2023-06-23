@@ -1,5 +1,5 @@
 import React from 'react'
-import { Bar, Pie } from 'react-chartjs-2'
+import { Bar } from 'react-chartjs-2'
 import { 
   Chart as ChartJS,
   CategoryScale,
@@ -7,7 +7,6 @@ import {
   BarElement,
   Title,
   Tooltip,
-  Legend,
  } from 'chart.js'
 
 
@@ -57,9 +56,9 @@ const TechStack = () => {
     className='tech-stack max-width pt-5 pb-5'
     id="tech-stack">
       <p className="title">TECHSTACK</p>
-      <h1 className="sub-title mb-0 mt-3 mb-lg-4">Why Me?</h1>
+      <h1 className="sub-title mb-0 mt-3">Why Me?</h1>
       
-      <div className="row ps-lg-5 ps-md-3 pe-md-5 pe-lg-5 pt-0 ps-1 pe-1 justify-content-center align-items-center m-lg-3 mt-5 mb-5 w-100">
+      <div className="row pt-lg-3 ps-lg-5 ps-md-3 pe-md-5 pe-lg-5 pt-0 ps-1 pe-1 justify-content-center align-items-center m-lg-3 mt-5 mb-5 w-100">
 
         
       <div className="col-12 about-left col-md-6  col-lg-6 p-4 pe-lg-4">
