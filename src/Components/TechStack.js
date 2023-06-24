@@ -53,12 +53,12 @@ import {
 const TechStack = () => {
   return (
     <div 
-    className='tech-stack max-width pt-5 pb-5'
+    className='tech-stack max-width pt-5 pb-0 pb-lg-5'
     id="tech-stack">
       <p className="title">TECHSTACK</p>
       <h1 className="sub-title mb-0 mt-3">Why Me?</h1>
       
-      <div className="row pt-lg-3 ps-lg-5 ps-md-3 pe-md-5 pe-lg-5 pt-0 ps-1 pe-1 justify-content-center align-items-center m-lg-3 mt-5 mb-5 w-100">
+      <div className="row tech-stack-row pt-lg-3 ps-lg-5 ps-md-3 pe-md-5 pe-lg-5 pt-0 ps-1 pe-1 justify-content-center align-items-center m-lg-3 mt-5 mb-5 w-100">
 
         
       <div className="col-12 about-left col-md-6  col-lg-6 p-4 pe-lg-4">
@@ -71,7 +71,10 @@ const TechStack = () => {
              alt="sign" />
         <p className='about-sign mt-1'>Siddhesh More</p>
       </div>
+      <p className='w-100 d-block d-lg-none text-end p-4 p-lg-1 text-white opacity-25'>Note: The above graph is made up of ChartJs</p>
+      
         
+
         <div className="chart col-11 col-lg-6 col-md-6 p-lg-3 pb-5">
           
         <p className="about-title d-block d-lg-none">Skills.</p>
@@ -83,7 +86,7 @@ const TechStack = () => {
            />
            
         </div>
-        <p className='w-100 text-end p-4 p-lg-1 text-white opacity-25'>Note: The above graph is made up of ChartJs</p>
+        <p className='w-100 d-none d-lg-block text-end p-4 p-lg-1 text-white opacity-25'>Note: The above graph is made up of ChartJs</p>
       </div>
     </div>
   )

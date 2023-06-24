@@ -1,54 +1,50 @@
-:root{
-  --color-background: #0D1225 ;
-  --color-pink: #EF25B3;
-  --color-purple:#8a24e8;
-  --color-card-background:#0A0C2A;
+:root {
+  --color-background: #0d1225;
+  --color-pink: #ef25b3;
+  --color-purple: #8a24e8;
+  --color-card-background: #0a0c2a;
 }
-
 body {
   margin: 0;
-  padding:0;
-  font-family: 'Inter', sans-serif;
+  padding: 0;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
-  /* background-color: var(--color-background); */
 }
-/* .app{
-  display: flex;
-  justify-content: center;
-} */
-.max-width{
+.max-width {
   max-width: 1440px;
   margin: 0 auto;
 }
-#banner{
+#banner {
+  padding-top: 4rem;
   height: auto;
   width: 100%;
-  background-image: url('./Images/background-with-pattern.png');
-
+  background-image: url("./Images/background-with-pattern.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  justify-content:center ;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
-.layer{
+.layer {
   /* height: 100%; */
   /* width: 100%; */
   /* display: flex; */
   /* justify-content:center ; */
   /* align-items: center; */
-  
-  background: linear-gradient(0deg, var(--color-background) 0%, rgba(138,36,232,0) 90%);
+  background: linear-gradient(
+    0deg,
+    var(--color-background) 0%,
+    rgba(138, 36, 232, 0) 90%
+  );
 }
-.roww{
+.roww {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.banner-left{
+.banner-left {
   display: flex;
   color: #ffffff;
   flex-direction: column;
@@ -57,48 +53,53 @@ body {
   text-align: start;
   gap: 1rem;
 }
-.banner-right{
+.banner-right {
   display: flex;
   justify-content: flex-end;
   position: relative;
 }
-.banner-left > h1{
+.banner-left > h1 {
   font-weight: 800;
   font-size: 2.7rem;
 }
-.banner-left > p{
+.banner-left > p {
   width: 100%;
   font-size: 1.5rem;
   font-weight: 500;
 }
-.hero-btn{
+.hero-btn {
   border: none;
   border-radius: 10rem;
   padding: 0.5rem 2rem;
   font-weight: bold;
   color: white;
-  background: rgb(239,37,179);
-  background: linear-gradient(90deg, rgba(239,37,179,1) 0%, rgba(138,36,232,1) 75%);
+  background: rgb(239, 37, 179);
+  background: linear-gradient(
+    90deg,
+    rgba(239, 37, 179, 1) 0%,
+    rgba(138, 36, 232, 1) 75%
+  );
 }
-
-
 /* ===[ Banner-End ]=== */
 
 /* ==={ Navbar }=== */
-#navbar{
+#navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: linear-gradient(0deg, #0a0c2a00 0% , #0a0c2a3f 75%);
+  background: linear-gradient(0deg, #0a0c2a00 0%, #0a0c2a3f 75%);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.links{
+.links {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-.link{
+.link {
   color: rgba(255, 255, 255, 0.608);
   font-weight: 500;
   font-size: small;
@@ -106,13 +107,10 @@ body {
   cursor: pointer;
   transition: 0.5s;
 }
-
-.link:hover{
+.link:hover {
   color: white;
-
 }
-
-.nav-btn{
+.nav-btn {
   border: none;
   border-radius: 10rem;
   padding: 0.3rem 2rem;
@@ -120,10 +118,8 @@ body {
   color: white;
   background: var(--color-purple);
   font-size: small;
-
 }
-
-.mobile-navbar{
+.mobile-navbar {
   position: fixed;
   background-color: #0d1225c7;
   width: 100vw;
@@ -133,36 +129,51 @@ body {
   border-radius: 8px 8px 0 0;
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.048);
-
 }
-
-.mobile-navbar i{
+.mobile-navbar i {
   font-size: 1.5rem;
   font-weight: lighter;
-
 }
-.i-cnt{
+.i-cnt {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   opacity: 60%;
   color: #ffffff;
+  text-decoration: none;
 }
-
-.i-cnt:hover{
+.i-cnt:hover {
   opacity: 100%;
-  
-
 }
-.i-cnt span{
+.active {
+  opacity: 100%;
+  scale: 1.1;
+}
+.i-cnt span {
   font-size: small;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-
+  font-weight: 500;
+  /* letter-spacing: 0.5px; */
 }
-
-#intro{
+.i-cnt svg {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-bottom: 0.3rem;
+}
+#email,
+#projects,
+#meta {
+  background-image: url("./Images/background-with-pattern.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+#intro {
   height: auto;
   display: flex;
   justify-content: center;
@@ -170,20 +181,17 @@ body {
   flex-direction: column;
   background-color: var(--color-background);
 }
-
-.title{
+.title {
   color: #994ce2;
   font-weight: 500;
   font-size: medium;
 }
-
-.sub-title{
+.sub-title {
   font-weight: 800;
   font-size: 2rem;
   color: #ffffff;
 }
-
-.para{
+.para {
   font-weight: 500;
   font-size: large;
   color: #ffffff;
@@ -191,8 +199,7 @@ body {
   text-align: center;
   opacity: 50%;
 }
-
-.card-row > .card{
+.card-row > .card {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -209,37 +216,36 @@ body {
   font-size: large;
   opacity: 50%;
 }
-.b-one > span{
+.b-one > span {
   font-weight: 800;
   color: #8a24e8;
 }
-.b-one{
+.b-one {
   border-top: 1.5px solid var(--color-purple);
 }
-.b-two > span{
+.b-two > span {
   font-weight: 800;
   color: #01a3a4;
 }
-.b-two{
+.b-two {
   border-top: 1.5px solid #01a3a4;
 }
-.b-three > span{
+.b-three > span {
   font-weight: 800;
-  color: #EF25B3 ;
+  color: #ef25b3;
 }
-.b-three{
-  border-top: 1.5px solid #EF25B3;
+.b-three {
+  border-top: 1.5px solid #ef25b3;
 }
-.b-four > span{
+.b-four > span {
   font-weight: 800;
   color: #f0932b;
 }
-.b-four{
+.b-four {
   border-top: 1.5px solid #f0932b;
 }
-
-#tech-stack{
-  background-image: url('./Images/techStack.png');
+#tech-stack {
+  background-image: url("./Images/techStack.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -249,46 +255,38 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
 }
-
-
-.chart{
+.chart {
   background-color: #0e142e;
   border: 1px solid rgba(255, 255, 255, 0.048);
   border-radius: 8px;
   height: 500px;
 }
-
-.about-title{
+.about-title {
   color: #f054c1 !important;
   font-weight: 500 !important;
   font-size: medium !important;
 }
-
-.about-left  p{
+.about-left p {
   font-weight: 500;
   font-size: 1.1rem;
   color: #ffffff;
   text-align: left;
   opacity: 60%;
-
 }
-.about-sign{
+.about-sign {
   color: #ffffff !important;
   font-weight: 500 !important;
   font-size: medium !important;
-
 }
-
 /* ===[ Media Qurry ]=== */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  #banner{
+  #banner {
     padding-top: 4rem;
   }
-  #navbar{
+  #navbar {
     width: 100%;
     background-color: #0d1225c7;
     position: fixed;
@@ -302,55 +300,54 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.048);
     padding: 0.8rem 0;
   }
-  .banner-right{
+  .banner-right {
     justify-content: center;
   }
-  .console{
+  .console {
     width: 420px;
   }
   /* ===[ Banner-End ]=== */
-.para{
-  width: 100%;
-}
-#tech-stack{
-  border-top: 0.1px solid #1c2035;
-}
-.chart{
-  height: 400px;
-  padding: 1.5rem;
-}
-  
+  .para {
+    width: 100%;
+  }
+  #tech-stack {
+    border-top: 0.1px solid #1c2035;
+  }
+  .chart {
+    height: 400px;
+    padding: 1.5rem;
+  }
+  .tech-stack-row {
+    flex-wrap: wrap-reverse;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
-  .banner-right{
+  .banner-right {
     justify-content: center;
   }
   /* ===[ Banner-End ]=== */
-  .console{
+  .console {
     width: 420px;
   }
-  
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  #banner{
+  #banner {
     height: auto;
   }
-
-  .banner-right{
+  .banner-right {
     justify-content: center;
   }
-  .console{
+  .console {
     width: 420px;
   }
-  .banner-left > h1{
+  .banner-left > h1 {
     font-size: 2rem;
   }
-  .banner-left > p{
+  .banner-left > p {
     font-size: 1rem;
   }
   /* ===[ Banner-End ]=== */
@@ -358,24 +355,21 @@ body {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  #banner{
+  #banner {
     height: auto;
   }
-  .banner-left > h1{
+  .banner-left > h1 {
     font-size: 2.5rem;
   }
-  .banner-left > p{
+  .banner-left > p {
     font-size: 1.2rem;
   }
   /* ===[ Banner-End ]=== */
-  .console{
+  .console {
     width: 110%;
-    margin-left: 2rem ;
+    margin-left: 2rem;
   }
-  #tech-stack{
+  #tech-stack {
     border-top: 1px solid rgba(255, 255, 255, 0.048);
-    
-  
   }
-  
 }
