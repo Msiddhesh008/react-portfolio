@@ -4,6 +4,8 @@
   --color-purple: #8a24e8;
   --color-card-background: #0a0c2a;
 }
+
+
 body {
   margin: 0;
   padding: 0;
@@ -162,7 +164,6 @@ body {
   margin-bottom: 0.3rem;
 }
 #email,
-#projects,
 #meta {
   background-image: url("./Images/background-with-pattern.png");
   background-position: center;
@@ -413,101 +414,3 @@ textarea {
   opacity: 80%;
 }
 
-/* ===[ Media Query ]=== */
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  #banner {
-    padding-top: 3rem;
-  }
-  #navbar {
-    width: 100%;
-    background-color: #0d1225;
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2;
-    /* border-radius: 0 0 8px 8px; */
-    backdrop-filter: blur(5px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.048);
-    padding: 0.8rem 0;
-  }
-  .logo img{
-    width: 46px;
-
-  }
-  .banner-right {
-    justify-content: center;
-  }
-  .console {
-    width: 420px;
-  }
-  /* ===[ Banner-End ]=== */
-  .para {
-    width: 100%;
-  }
-  #tech-stack {
-    border-top: 0.1px solid #1c2035;
-  }
-  .chart {
-    height: 400px;
-    padding: 1.5rem;
-  }
-  .tech-stack-row {
-    flex-wrap: wrap-reverse;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .banner-right {
-    justify-content: center;
-  }
-  /* ===[ Banner-End ]=== */
-  .console {
-    width: 420px;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  #banner {
-    height: auto;
-  }
-  .banner-right {
-    justify-content: center;
-  }
-  .console {
-    width: 420px;
-  }
-  .banner-left > h1 {
-    font-size: 2rem;
-  }
-  .banner-left > p {
-    font-size: 1rem;
-  }
-  /* ===[ Banner-End ]=== */
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  #banner {
-    height: auto;
-  }
-  .banner-left > h1 {
-    font-size: 2.5rem;
-  }
-  .banner-left > p {
-    font-size: 1.2rem;
-  }
-  /* ===[ Banner-End ]=== */
-  .console {
-    width: 110%;
-    margin-left: 2rem;
-  }
-  #tech-stack {
-    border-top: 1px solid rgba(255, 255, 255, 0.048);
-  }
-}
