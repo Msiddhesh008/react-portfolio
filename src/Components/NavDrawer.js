@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const NavDrawer = () => {
   return (
     <div className="mobile-navbar d-flex p-1 d-md-none d-lg-none">
-      <NavLink className="i-cnt p-2" to="/react-portfolio">
+      <NavLink className="i-cnt p-1" to="/react-portfolio">
         <i class="bi bi-house-door-fill"></i>
         <span>Home</span>
       </NavLink>
@@ -22,8 +22,8 @@ const NavDrawer = () => {
       <NavLink to="/meta" className="i-cnt p-1">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="28"
-          height="28"
+          width="26"
+          height="26"
           fill="currentColor"
           class="bi bi-meta"
           viewBox="0 0 16 16"
