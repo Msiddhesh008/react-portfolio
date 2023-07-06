@@ -5,7 +5,7 @@ import TechStack from '../Components/TechStack'
 
 const Home = () => {
   return (
-    <div className='max-width'>
+    <div className='max-width home'>
         <Banner />
         <Intro />
         <TechStack />

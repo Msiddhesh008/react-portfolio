@@ -1,153 +1,170 @@
 /* ===[ Media Query ]=== */
-#projects{
-  background-image: url("./Images/background-with-pattern.png");
+#email,
+#projects {
+  /* background-image: url("./Images/background-with-pattern.png");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background-color: #0e0e42f3;
   height: 100vh;
   overflow-x: scroll;
   color: white;
-  padding-top: 5rem;
+  padding-top: 5.8rem;
   padding-bottom: 4rem;
 }
-.pro-disc{
-    
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+#email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.pro-btn{
-    text-align: center;
-    text-decoration: none;
-    width: auto;
-    font-size: small;
-    border: none;
-    border-radius: 10rem;
-    padding: 0.2rem 0.5rem;
-    font-weight: 300;
-    color: white;
-    background: rgb(239, 37, 179);
-    background: linear-gradient(
-      90deg,
-      rgba(138, 36, 232, 1) 0%,
-      rgba(239, 37, 179, 1) 75%
-    );
+.pro-disc {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.pro-btn {
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  font-size: small;
+  border: none;
+  border-radius: 10rem;
+  padding: 0.2rem 0.5rem;
+  font-weight: 300;
+  color: white;
+  background: rgb(239, 37, 179);
+  background: linear-gradient(
+    90deg,
+    rgba(138, 36, 232, 1) 0%,
+    rgba(239, 37, 179, 1) 75%
+  );
+}
 
+.slide-show {
+  width: 95%;
+  height: 12rem;
+  background-color: #290447;
+  margin: 0 auto;
+  border-radius: 14px;
+  background-color: #1b083a;
+  background-color: #0d1225;
+  border-bottom: 1px solid var(--color-purple);
+  box-shadow: rgba(0, 0, 0, 0.418) 0px 3px 8px;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
-
-    #projects::-webkit-scrollbar{
-        /* display: none; */
-        background-color: transparent;
-        width: 0px;
-      }
-
-
-    #banner {
-      padding-top: 3rem;
-    }
-    #navbar {
-      width: 100%;
-      background-color: #0d1225;
-      position: fixed;
-      top: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 2;
-      /* border-radius: 0 0 8px 8px; */
-      backdrop-filter: blur(5px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.048);
-      padding: 0.8rem 0;
-    }
-    .logo img{
-      width: 46px;
-  
-    }
-    .banner-right {
-      justify-content: center;
-    }
-    .console {
-      width: 420px;
-    }
-    /* ===[ Banner-End ]=== */
-    .para {
-      width: 100%;
-    }
-    #tech-stack {
-      border-top: 0.1px solid #1c2035;
-    }
-    .chart {
-      height: 400px;
-      padding: 1.5rem;
-    }
-    .tech-stack-row {
-      flex-wrap: wrap-reverse;
-    }
-    .pro-cnt{
-        margin: 0 auto;
-        background-color: #1e0335c7;
-        background-color: #1b083a;
-        display: flex;
-        justify-content: flex-start;
-        width: 95%;
-        border-radius: 14px;
-        border-bottom: 1px solid var(--color-purple);
-        /* border: 0.5px solid #282e4b; */
-    }
+  #projects::-webkit-scrollbar {
+    /* display: none; */
+    background-color: transparent;
+    width: 0px;
   }
-  
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-    .banner-right {
-      justify-content: center;
-    }
-    /* ===[ Banner-End ]=== */
-    .console {
-      width: 420px;
-    }
+
+  #banner {
+    padding-top: 3rem;
   }
-  
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    #banner {
-      height: auto;
-    }
-    .banner-right {
-      justify-content: center;
-    }
-    .console {
-      width: 420px;
-    }
-    .banner-left > h1 {
-      font-size: 2rem;
-    }
-    .banner-left > p {
-      font-size: 1rem;
-    }
-    /* ===[ Banner-End ]=== */
+  #navbar {
+    width: 100%;
+    background-color: #0d1225;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    /* border-radius: 0 0 8px 8px; */
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.048);
+    padding: 0.8rem 0;
   }
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    #banner {
-      height: auto;
-    }
-    .banner-left > h1 {
-      font-size: 2.5rem;
-    }
-    .banner-left > p {
-      font-size: 1.2rem;
-    }
-    /* ===[ Banner-End ]=== */
-    .console {
-      width: 110%;
-      margin-left: 2rem;
-    }
-    #tech-stack {
-      border-top: 1px solid rgba(255, 255, 255, 0.048);
-    }
+  .logo img {
+    width: 56px;
   }
-  
+  .banner-right {
+    justify-content: center;
+  }
+  .console {
+    width: 420px;
+  }
+  /* ===[ Banner-End ]=== */
+  .para {
+    width: 100%;
+  }
+  #tech-stack {
+    border-top: 0.1px solid #1c2035;
+  }
+  .chart {
+    height: 400px;
+    padding: 1.5rem;
+  }
+  .tech-stack-row {
+    flex-wrap: wrap-reverse;
+  }
+  .pro-cnt {
+    margin: 0 auto;
+    background-color: #1e0335c7;
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+    border-radius: 14px;
+    background-color: #1b083a;
+    background-color: #0d1225;
+    border-bottom: 1px solid var(--color-purple);
+
+    box-shadow: rgba(0, 0, 0, 0.418) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
+    /* border: 0.5px solid #282e4b; */
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .banner-right {
+    justify-content: center;
+  }
+  /* ===[ Banner-End ]=== */
+  .console {
+    width: 420px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #banner {
+    height: auto;
+  }
+  .banner-right {
+    justify-content: center;
+  }
+  .console {
+    width: 420px;
+  }
+  .banner-left > h1 {
+    font-size: 2rem;
+  }
+  .banner-left > p {
+    font-size: 1rem;
+  }
+  /* ===[ Banner-End ]=== */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #banner {
+    height: auto;
+  }
+  .banner-left > h1 {
+    font-size: 2.5rem;
+  }
+  .banner-left > p {
+    font-size: 1.2rem;
+  }
+  /* ===[ Banner-End ]=== */
+  .console {
+    width: 110%;
+    margin-left: 2rem;
+  }
+  #tech-stack {
+    border-top: 1px solid rgba(255, 255, 255, 0.048);
+  }
+}
