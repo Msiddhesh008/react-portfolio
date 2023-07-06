@@ -1,16 +1,25 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.5bc61d5d.css",
-    "main.js": "/react-portfolio/static/js/main.b2249943.js",
+    "main.css": "/react-portfolio/static/css/main.51aff0ac.css",
+    "main.js": "/react-portfolio/static/js/main.b285997d.js",
+    "static/media/todo.png": "/react-portfolio/static/media/todo.0e519713dbcff7ed2a27.png",
+    "static/media/photox1.png": "/react-portfolio/static/media/photox1.2884801f0ac528bd61fd.png",
+    "static/media/coin1.png": "/react-portfolio/static/media/coin1.184ac69eb6d6a8aa8531.png",
     "static/media/background-with-pattern.png": "/react-portfolio/static/media/background-with-pattern.f8ef953ce2a6b40855cf.png",
+    "static/media/diceGame1.png": "/react-portfolio/static/media/diceGame1.7fac4f5a3be99d8a6fee.png",
+    "static/media/firechat.png": "/react-portfolio/static/media/firechat.0204f7f286299e08cdba.png",
     "static/media/techStack.png": "/react-portfolio/static/media/techStack.7cc83f99325b9b4f511a.png",
+    "static/media/dad-joke.png": "/react-portfolio/static/media/dad-joke.2d043d2d168087ec0491.png",
+    "static/media/Creative.png": "/react-portfolio/static/media/Creative.6415e8beaed03fdc64ae.png",
     "static/media/console-two.png": "/react-portfolio/static/media/console-two.2264273c6b8c0700520c.png",
+    "static/media/Analytical.png": "/react-portfolio/static/media/Analytical.3fbdead5678b851edeff.png",
+    "static/media/Versatile.png": "/react-portfolio/static/media/Versatile.022464d47d278dda3e41.png",
     "index.html": "/react-portfolio/index.html",
-    "main.5bc61d5d.css.map": "/react-portfolio/static/css/main.5bc61d5d.css.map",
-    "main.b2249943.js.map": "/react-portfolio/static/js/main.b2249943.js.map"
+    "main.51aff0ac.css.map": "/react-portfolio/static/css/main.51aff0ac.css.map",
+    "main.b285997d.js.map": "/react-portfolio/static/js/main.b285997d.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bc61d5d.css",
-    "static/js/main.b2249943.js"
+    "static/css/main.51aff0ac.css",
+    "static/js/main.b285997d.js"
   ]
 }
